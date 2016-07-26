@@ -33,7 +33,14 @@ class ViewController: UIViewController {
                 
                 if websiteArray?.count > 0 {
                     
-                    print(websiteArray![1])   // In console log, just for debug.
+                    let weatherArray = websiteArray![1].componentsSeparatedByString("</span>")
+                    
+                    if weatherArray.count > 0 {
+                        
+                        let weatherSummary = weatherArray[0]
+                    }
+                    
+                    print(weatherArray[0])   // In console log, just for debug.
                 }
             }
         }
