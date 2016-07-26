@@ -26,11 +26,11 @@ class ViewController: UIViewController {
                 
                 let websiteArray = webContent!.componentsSeparatedByString("3 Day Weather Forecast Summary:</b><span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">")
                 
-                if websiteArray.count > 0 {
+                if websiteArray.count > 1 {
                     
                     let weatherArray = websiteArray[1].componentsSeparatedByString("</span>")
                     
-                    if weatherArray.count > 0 {
+                    if weatherArray.count > 1 {
                         
                         let weatherSummary = weatherArray[0].stringByReplacingOccurrencesOfString("&deg;", withString: "º")
                         
