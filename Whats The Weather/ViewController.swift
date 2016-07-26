@@ -31,7 +31,10 @@ class ViewController: UIViewController {
                 
                 let websiteArray = webContent?.componentsSeparatedByString("3 Day Weather Forecast Summary:</b><span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">")
                 
-                print(websiteArray)   // In console log, just for debug.
+                if websiteArray?.count > 0 {
+                    
+                    print(websiteArray![1])   // In console log, just for debug.
+                }
             }
         }
         
