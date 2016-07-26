@@ -37,7 +37,7 @@ class ViewController: UIViewController {
                     
                     if weatherArray.count > 0 {
                         
-                        let weatherSummary = weatherArray[0]
+                        let weatherSummary = weatherArray[0].stringByReplacingOccurrencesOfString("&deg;", withString: "º")
                         
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             
