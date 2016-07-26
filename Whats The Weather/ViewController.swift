@@ -15,11 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet var resultLabel: UILabel!
     
     @IBAction func findWeather(sender: AnyObject) {
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         let url = NSURL(string: "http://www.weather-forecast.com/locations/Paris/forecasts/latest")!
         
@@ -50,6 +45,11 @@ class ViewController: UIViewController {
         }
         
         task.resume()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

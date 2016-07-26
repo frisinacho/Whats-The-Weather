@@ -61,7 +61,7 @@
                                     <action selector="findWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsV-Jh-pXj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-H9-Wc8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-H9-Wc8">
                                 <rect key="frame" x="155" y="257" width="290" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="e2I-4c-u6X"/>
